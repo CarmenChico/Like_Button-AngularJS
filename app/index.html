@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Like it? </title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
   </head>
-  <body>
+  <body ng-app="app">
     <div class="container">
-      <p>Welcome to your life.</p>
+      <button ng-click= "count = count + 1" ng-init="count=0"> {{ count }} <i class="em em---1"> </i> Like </button>
+      <button type="button" name="button">  +   <i class="em em-question">  </i> - </button>
     </div>
     <script src="js/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   </body>
 </html>
