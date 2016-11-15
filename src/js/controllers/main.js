@@ -1,16 +1,32 @@
 function MainController ($scope) {
     // $scope.value = [];
+    $scope.Likes = "Likes";
       $scope.count = 0;
-      $scope.Like = "Like";
-      $scope.Likes = "Likes";
+      var countUp = true;
 
-      $scope.count = function(){
 
-      if ($scope.count===1) {
-          return ($scope.count + "Like");
-      } else {
-        return ($scope.count + "Likes");
-      }
+      $scope.addLike = function(){
+        if (countUp===true) {
+          $scope.count = $scope.count + 1
+          // $scope.count++
+          // $scope.count += 1
+          // $scope.count += 5
+        } else {
+          $scope.count = $scope.count - 1
+        }
+        if ($scope.count < 0) {
+          $scope.count = 0
+        }
+
+        if ($scope.count===1) {
+            $scope.Likes = "Like";
+        } else {
+          $scope.Likes = "Likes";
+        }
+
+    }
+    $scope.toggle=function(){
+        countUp = !countUp
     }
 };
 
@@ -21,3 +37,6 @@ function MainController ($scope) {
 
 MainController.$inject = ['$scope'];
 export { MainController };
+
+
+// return ($scope.count + "Likes");

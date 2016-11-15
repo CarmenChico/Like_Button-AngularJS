@@ -22,3 +22,16 @@ button:hover {
   height: 65px;
   width: 155px;
 }
+.other {
+  font-size: 8px;
+    span {
+      height: 60px;
+      width: 150px;
+      color: white;
+      font-size: 15px;
+      word-spacing: 10px;
+        i.em {
+          font-size: 15px;
+        }
+    }
+}

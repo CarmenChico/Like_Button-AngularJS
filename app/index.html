@@ -10,11 +10,18 @@
 
   </head>
   <body ng-app="app">
-    <div class="container" ng-controler="MainController">
-      <button ng-click= "count = count + 1" ng-init="count=0"> {{ count }} <i class="em em---1"> </i> {{Likes}}Likes </button>
-      <button><span ng-click= "count = count - 1" ng-init="count=0"> - </span> <i class="em em-question">  </i> <span ng-click= "count = count + 1" ng-init="count=0"> + </span> </button>
+    <div class="container" ng-controller="MainController">
+      <button ng-click= "addLike()" ng-init="count=0"> {{ count }} <i class="em em---1"> </i> {{ Likes }} </button>
+      <button ng-click="toggle()" ng-init="count=0"> "Toggle" </button>
+      <button class= "other">just b/c I can<Br> <span ng-click= "count = count - 1" ng-init="count=0"> - </span> <i class="em em-question">  </i> <span ng-click= "count = count + 1" ng-init="count=0"> + </span> </button>
     </div>
     <script src="js/bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  </body>
+</html>
+
+    </div>
+    <script src="js/bundle.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
   </body>
 </html>
