@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like it? </title>
+    <title>Like it? .... or Don't like it? </title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   </head>
   <body ng-app="app">
-    <div class="container">
-      <button ng-click= "count = count + 1" ng-init="count=0"> {{ count }} <i class="em em---1"> </i> Like </button>
-      <button type="button" name="button">  +   <i class="em em-question">  </i> - </button>
+    <div class="container" ng-controler="MainController">
+      <button ng-click= "count = count + 1" ng-init="count=0"> {{ count }} <i class="em em---1"> </i> {{Likes}}Likes </button>
+      <button><span ng-click= "count = count - 1" ng-init="count=0"> - </span> <i class="em em-question">  </i> <span ng-click= "count = count + 1" ng-init="count=0"> + </span> </button>
     </div>
     <script src="js/bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
