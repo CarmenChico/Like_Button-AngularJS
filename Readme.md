@@ -10,8 +10,8 @@ Objectives
 
 
 
-We were asked to replicate the behavior of the image and make it functional; As well as add a 2nd button to toggle the +/-
+We were asked to replicate the behavior of the image and make it functional; As well as add a 2nd button to toggle the +(plus)/ -(subtraction)
 ![alt tag](https://tiy-learn-content.s3.amazonaws.com/8dbfc646-likes.gif)
  - - - -
 
-#### Click the link to my [live Project](tiy-maria-del-carmenchico-weekend_the_project.surge.sh)
+#### Click the link to my [live Project](tiy-maria-del-carmenchico-angular_likes.surge.sh)
