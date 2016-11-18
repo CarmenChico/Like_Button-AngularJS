@@ -14,6 +14,6 @@ We were asked to replicate the behavior of the image and make it functional; As 
 ![alt tag](https://tiy-learn-content.s3.amazonaws.com/8dbfc646-likes.gif)
  - - - -
 
-#### Click the link to my [live Project](tiy-maria-del-carmenchico-angular_likes.surge.sh)
+#### Click the link to my [live Project](http://tiy-maria-del-carmenchico-angular_likes.surge.sh)
 
 tiy-maria-del-carmenchico-angular_likes.surge.sh  (link above sometimes does not work)
